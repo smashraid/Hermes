@@ -5,6 +5,7 @@ import * as bodyParser from 'body-parser';
 import * as helmet  from "helmet"
 
 import { ContactRoute } from "./routes/contact.route"
+import { DatabaseRoute } from "./routes/database.route"
 // Creates and configures an ExpressJS web server.
 class App {
 
@@ -39,7 +40,7 @@ class App {
         //     });
         // });
         this.express.use("/", ContactRoute);
-        
+        this.express.use("/db", DatabaseRoute);
     }
 
 }

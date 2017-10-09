@@ -1,8 +1,11 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "description": "",
+  "description": "Mail App",
   "main": "index.js",
+  "repository": {
+    "url": "https://github.com/smashraid/Hermes.git"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -14,11 +17,13 @@
     "@types/debug": "0.0.30",
     "@types/express": "^4.0.37",
     "@types/node": "^8.0.31",
+    "@types/sqlite3": "^3.1.1",
     "body-parser": "^1.17.1",
     "debug": "^2.6.3",
     "express": "^4.15.2",
     "helmet": "^3.8.2",
-    "morgan": "^1.8.1"
+    "morgan": "^1.8.1",
+    "sqlite3": "^3.1.13"
   },
   "devDependencies": {
     "awesome-typescript-loader": "^3.2.3",
