@@ -1,0 +1,1 @@
+$ curl -X POST 'http://localhost:3000/db/table' -H 'Content-Type: application/json' -d '{"name": "Contact", "props": {"id":"INT PRIMARY KEY","firstname":"TEXT NOT NULL","lastname":"TEXT NOT NULL","email":"TEXT NOT NULL","phone": "TEXT NOT NULL"}}'

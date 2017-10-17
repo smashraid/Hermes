@@ -10,4 +10,9 @@ router.get("/test", (req: Request, res: Response) => {
 
 router.get("/", user.getAll);
 
+router.post("/test2", (req: Request, res: Response) => {
+
+    res.send('POST request to the homepage ' + req.body.name)
+});
+
 export const ContactRoute: Router = router;
